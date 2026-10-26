@@ -98,7 +98,7 @@ graph TD
     I --> K[Real-Time Event Stream Log]
     I --> L[Live UI State Trigger e.g., Open Settings]
 
----
+```
 
 ## 6. How to Set Up the Application
 
@@ -106,6 +106,10 @@ graph TD
 
 * Python 3.10 or higher
 * A Groq API Key ([Get one here](https://console.groq.com/))
+
+```
+
+```
 
 ### **Step 1: Clone and Configure Environment**
 
