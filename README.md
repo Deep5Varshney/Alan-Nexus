@@ -1,7 +1,3 @@
-The parsing error is happening because HTML image tags (`<img ... />`) were accidentally placed *inside* a ````mermaid` code block, which expects strict diagram syntax. Additionally, a code block formatting error near the bottom caused the rest of the text to render as a giant unformatted code snippet.
-
-Here is the fully corrected, polished `README.md` code. You can copy and paste this directly into your repository:
-
 ```markdown
 # ⚡ Alan-Nexus: Enterprise-Grade Multi-Agent Middleware for Voice & Intent Orchestration
 > **Tech Stack:** FastAPI | LangGraph | Groq API (`openai/gpt-oss-20b`) | Streamlit | Python 3.10+
