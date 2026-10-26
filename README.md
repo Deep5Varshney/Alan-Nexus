@@ -1,11 +1,9 @@
-
-```markdown
 # ⚡ Alan-Nexus: Enterprise-Grade Multi-Agent Middleware for Voice & Intent Orchestration
 > **Tech Stack:** FastAPI | LangGraph | Groq API (`openai/gpt-oss-20b`) | Streamlit | Python 3.10+
 
 ---
 
-## 🔗 Quick Links & Live Demos
+##  Quick Links & Live Demos
 
 [![Live App](https://img.shields.io/badge/🚀_Live_App-Streamlit_Cloud-4f46e5?style=for-the-badge)](https://alan-nexus-gbrwqtvtu4hwbi2mkmde9z.streamlit.app/)
 [![Backend API](https://img.shields.io/badge/⚡_Backend_API-Render-4ade80?style=for-the-badge)](https://alan-nexus.onrender.com)
@@ -13,11 +11,26 @@
 
 ---
 
-## 📸 Project Architecture & UI Gallery
+##  Project Architecture, UI & Code Gallery
 
-### 1. The Developer Control Plane (Streamlit UI)
+### 1. The Developer Control Plane (Frontend UI)
 *A professional, dark-mode developer testing dashboard featuring real-time event streaming, latency tracking, and active session memory.*
-> <img width="1917" height="962" alt="Streamlit Control Plane" src="[https://github.com/user-attachments/assets/a5fa1c18-993e-42b4-8fc8-0a82d49320aa](https://github.com/user-attachments/assets/a5fa1c18-993e-42b4-8fc8-0a82d49320aa)" />
+
+<img width="1917" height="962" alt="Streamlit Control Plane" src="https://github.com/user-attachments/assets/a5fa1c18-993e-42b4-8fc8-0a82d49320aa" />
+
+### 2. FastAPI Bridge (`main.py`)
+*Exposing high-performance asynchronous endpoints to ingest voice and text commands.*
+
+<img width="1000" height="640" alt="FastAPI Bridge" src="https://github.com/user-attachments/assets/0349a378-2a99-4eb8-a1e4-caed68367955" />
+
+### 3. Graph Routing & Nodes (`graph.py`)
+*Stateful multi-agent orchestration containing the intent classifier, task executor, and response synthesizer nodes.*
+
+<img width="1072" height="416" alt="Intent Classifier" src="https://github.com/user-attachments/assets/f357ed8d-803b-4f27-90b4-5fa2afd0deed" />
+
+<img width="1197" height="606" alt="Task Executor" src="https://github.com/user-attachments/assets/7ac8832f-c989-4bec-8437-f49f86645132" />
+
+<img width="1156" height="553" alt="Response Synthesizer" src="https://github.com/user-attachments/assets/af5ac881-305e-4f07-b567-efcaadd30e83" />
 
 ---
 
@@ -69,7 +82,7 @@ Alan-Nexus introduces an enterprise-ready architecture that transforms rigid voi
 
 ---
 
-## 5. Architecture Flowchart & Component Breakdown
+## 5. Architecture Flowchart
 
 ```mermaid
 graph TD
@@ -85,19 +98,6 @@ graph TD
     I --> K[Real-Time Event Stream Log]
     I --> L[Live UI State Trigger e.g., Open Settings]
 
-```
-
-### **Component Architecture Visualized:**
-
-* **Incoming Pipeline & FastAPI Bridge:**
-
-* **Intent Classification Node:**
-
-* **Task Execution Node:**
-
-* **Response Synthesis Node:**
-
-
 ---
 
 ## 6. How to Set Up the Application
@@ -110,7 +110,7 @@ graph TD
 ### **Step 1: Clone and Configure Environment**
 
 ```bash
-git clone https://github.com/your-username/alan-nexus.git
+git clone [https://github.com/your-username/alan-nexus.git](https://github.com/your-username/alan-nexus.git)
 cd alan-nexus
 
 # Create and activate virtual environment
