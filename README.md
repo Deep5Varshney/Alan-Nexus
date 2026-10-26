@@ -107,9 +107,6 @@ graph TD
 * Python 3.10 or higher
 * A Groq API Key ([Get one here](https://console.groq.com/))
 
-```
-
-```
 
 ### **Step 1: Clone and Configure Environment**
 
@@ -169,6 +166,3 @@ streamlit run app.py
 * **Edge Air-Gapping:** Support fully localized open-weight models (Llama 3 8B) running via Ollama for zero-data-leakage enterprise environments.
 * **WebSocket Streaming:** Upgrade FastAPI endpoints from HTTP REST to bi-directional WebSockets for real-time token streaming and sub-100ms voice streaming feedback.
 
-```
-
-```
