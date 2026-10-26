@@ -137,6 +137,23 @@ streamlit run app.py
 
 ---
 
+## 🔗 Quick Links & Live Demos
+
+[![Live App](https://img.shields.io/badge/🚀_Live_App-Streamlit_Cloud-4f46e5?style=for-the-badge)](https://alan-nexus-gbrwqtvtu4hwbi2mkmde9z.streamlit.app/)
+[![Backend API](https://img.shields.io/badge/⚡_Backend_API-Render-4ade80?style=for-the-badge)](https://alan-nexus.onrender.com)
+[![Watch Demo Video](https://img.shields.io/badge/🎥_Demo_Video-Watch_Pitch-ef4444?style=for-the-badge)](https://drive.google.com/file/d/108p_OA1boaD71LFMV_bq-nRq1GwBQAER/view?usp=sharing)
+
+---
+
+## 📸 Project Architecture & UI Gallery
+
+### 1. The Developer Control Plane (Streamlit UI)
+*A professional, dark-mode developer testing dashboard featuring real-time event streaming, latency tracking, and active session memory.*
+> *[Insert screenshot of your Streamlit Dashboard here: e.g., `<img width="1917" height="962" alt="Screenshot 2026-10-26 220757" src="https://github.com/user-attachments/assets/a5fa1c18-993e-42b4-8fc8-0a82d49320aa" />
+`]*
+```text
+[ Screenshot Placeholder: Live Streamlit Developer Control Plane ]
+
 ## 7. Future Improvements & Roadmap
 
 * **Persistent Vector Memory:** Replace in-memory checkpointers with PostgreSQL + ChromaDB for long-term user context retention across system reboots.
