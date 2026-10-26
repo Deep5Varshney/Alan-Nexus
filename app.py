@@ -42,7 +42,7 @@ if "chat_history" not in st.session_state:
 if "show_settings" not in st.session_state:
     st.session_state.show_settings = False
 
-BACKEND_URL = "http://localhost:8000/api/nexus/voice"
+BACKEND_URL = "https://alan-nexus.onrender.com"
 
 def log_event(message, level="INFO"):
     timestamp = datetime.now().strftime("%H:%M:%S")
