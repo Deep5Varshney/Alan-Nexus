@@ -59,12 +59,19 @@ Alan-Nexus introduces an enterprise-ready architecture that transforms rigid voi
 ```mermaid
 graph TD
     A[User Voice / Text Input] -->|Streamlit Control Plane| B(FastAPI Bridge /api/nexus/voice)
+    <img width="1000" height="640" alt="Screenshot 2026-10-26 235705" src="https://github.com/user-attachments/assets/0349a378-2a99-4eb8-a1e4-caed68367955" />
+
     B --> C{LangGraph StateGraph}
     
     C --> D[Node 1: IntentClassifier]
+    <img width="1072" height="416" alt="Screenshot 2026-10-26 235754" src="https://github.com/user-attachments/assets/f357ed8d-803b-4f27-90b4-5fa2afd0deed" />
+
     D -->|Classifies Intent| E[Node 2: TaskExecutor]
+    <img width="1197" height="606" alt="Screenshot 2026-10-26 235747" src="https://github.com/user-attachments/assets/7ac8832f-c989-4bec-8437-f49f86645132" />
     
     E -->|Executes Logic & Payload| F[Node 3: ResponseSynthesizer]
+    <img width="1156" height="553" alt="Screenshot 2026-10-26 235735" src="https://github.com/user-attachments/assets/af5ac881-305e-4f07-b567-efcaadd30e83" />
+
     F -->|State Checkpointer| G[(InMemorySaver Thread Memory)]
     
     F --> H[Groq LLM openai/gpt-oss-20b]
@@ -137,7 +144,7 @@ streamlit run app.py
 
 ---
 
-## 🔗 Quick Links & Live Demos
+##  Quick Links & Live Demos
 
 [![Live App](https://img.shields.io/badge/🚀_Live_App-Streamlit_Cloud-4f46e5?style=for-the-badge)](https://alan-nexus-gbrwqtvtu4hwbi2mkmde9z.streamlit.app/)
 [![Backend API](https://img.shields.io/badge/⚡_Backend_API-Render-4ade80?style=for-the-badge)](https://alan-nexus.onrender.com)
@@ -145,14 +152,15 @@ streamlit run app.py
 
 ---
 
-## 📸 Project Architecture & UI Gallery
+##  Project Architecture & UI Gallery
 
 ### 1. The Developer Control Plane (Streamlit UI)
 *A professional, dark-mode developer testing dashboard featuring real-time event streaming, latency tracking, and active session memory.*
-> *[Insert screenshot of your Streamlit Dashboard here: e.g., `<img width="1917" height="962" alt="Screenshot 2026-10-26 220757" src="https://github.com/user-attachments/assets/a5fa1c18-993e-42b4-8fc8-0a82d49320aa" />
-`]*
+> <img width="1917" height="962" alt="Screenshot 2026-10-26 220757" src="https://github.com/user-attachments/assets/a5fa1c18-993e-42b4-8fc8-0a82d49320aa" />
 ```text
 [ Screenshot Placeholder: Live Streamlit Developer Control Plane ]
+
+---
 
 ## 7. Future Improvements & Roadmap
 
